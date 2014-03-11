@@ -112,6 +112,16 @@ textarea {
 .site-header {
     margin: 0px auto;
     padding: 0px;
+    font-family: 'Roboto' sans-serif;
+}
+
+.site-header .page {
+    font-size: 18px;
+}
+
+.site-header .page-highlight {
+    color: #369D00;
+    border-bottom: 1px solid #777;
 }
 
 .site-header .navbar {
@@ -183,7 +193,7 @@ textarea {
 }
 
 .site-footer a:hover {
-    color: #0a4706;
+    color: #369D00;
 }
 
 .site-footer .container {
@@ -208,16 +218,27 @@ textarea {
 
 /*-- Blog Pages --*/
 
-.blog .site-header .social-nav {
-    float: left;
+/*-- Blog Posts --*/
+.blog .blog-post {
+    margin-bottom: 3em;
 }
 
-.blog .body-column {
-    margin-top: 51px;
+.blog .blog-post .blog-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
+
+.blog .blog-post .blog-details {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+    margin: 1em auto;
+}
+
+/*-- Blog Sidebar --*/
 
 .blog .affix {
-    top: 51px;
+    top: 2em;
 }
 
 .blog .sidebar-affix {
@@ -228,10 +249,43 @@ textarea {
     position: relative;
 }
 
-.blog .sidebar .section-header .image-wrapper img {
+.blog .sidebar .section-header .image-wrapper .circle-crop {
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+.blog .sidebar .sidebar-nav {
+    margin-top: 1em;
+}
+
+.blog .sidebar .nav .nav-item {
+    float: left;
+}
+
+.blog .sidebar .nav .nav-item a {
+    padding: 5px;
+    color: #333;
+    transition: all ease-in 0.3s;
+}
+
+.blog .sidebar .nav .nav-item a:hover {
+    color: #369D00;
+    background: none;
+}
+
+.blog .sidebar .blog-nav .nav-item {
+    width: 100%;
+}
+
+.blog .sidebar .nav .active a {
+    color: #FFF;
+    background: #369D00;
+}
+
+.blog .sidebar .nav .active a:hover {
+    color: #369D00;
+    background: #FFF;
 }
 
 /* ==========================================================================
